@@ -7,7 +7,9 @@ public abstract class Kendaraan {
     int tahun;
 
     public abstract void Start();
-    
+    public abstract void Brake();
+    public abstract void Stop();
+
     public void getInfo(){
         System.out.println("Kendaraan: " + name);
         System.out.println("Model : " + model);

@@ -6,7 +6,7 @@ import kendaraan.util.Flyable;
 public class Pesawat extends Kendaraan implements Flyable {
     @Override
     public void Start() {
-        System.out.println("Mennyalakan pesawat " + this.getName());
+        System.out.println("Menyalakan pesawat " + this.getName());
     }
 
     @Override
@@ -14,6 +14,10 @@ public class Pesawat extends Kendaraan implements Flyable {
         System.out.println("Mematikan mesin pesawat " + this.getName());
     }
 
+    @Override
+    public void Brake() {
+        System.out.println("Pesawat berhenti");
+    }
 
 
     @Override
